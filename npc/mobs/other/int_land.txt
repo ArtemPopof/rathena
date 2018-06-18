@@ -7,15 +7,20 @@
 
 int_land,0,0	monster	Poring	2401,30,5000
 int_land,0,0	monster	Small Lunatic	1726,10,5000
+int_land,0,0	monster	Poring Leader	3401,2,50000
 
 int_land01,0,0	monster	Poring	2401,30,5000
 int_land01,0,0	monster	Small Lunatic	1726,10,5000
+int_land01,0,0	monster	Poring Leader	3401,2,50000
 
 int_land02,0,0	monster	Poring	2401,30,5000
 int_land02,0,0	monster	Small Lunatic	1726,10,5000
+int_land02,0,0	monster	Poring Leader	3401,2,50000
 
 int_land03,0,0	monster	Poring	2401,30,5000
 int_land03,0,0	monster	Small Lunatic	1726,10,5000
+int_land03,0,0	monster	Poring Leader	3401,2,50000
 
 int_land04,0,0	monster	Poring	2401,30,5000
 int_land04,0,0	monster	Small Lunatic	1726,10,5000
+int_land04,0,0	monster	Poring Leader	3401,2,50000
