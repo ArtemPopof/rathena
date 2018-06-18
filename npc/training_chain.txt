@@ -182,7 +182,7 @@ int_land,78,103,5	script	Captain Carocc#intro_npc03	4_M_REINDEER,{
 		setquest 21008;
 		next;
 		mes "[Captain Carocc]";
-		mes "Speaking of Porings, you have to equip your gears.";
+		mes "Speaking of Monsters, you have to equip your gears.";
 		mes "You should have a ^4d4dffweapon and an armor^000000 equipped.";
 		next;
 		cutin "tutorial03",4;
@@ -341,8 +341,8 @@ int_land,58,69,5	script	Sailor#intro_npc04	4W_SAILOR,{
 	if (isbegin_quest(21008) == 1) {
 		if (countitem(6008) < 4 || countitem(1002) < 2) {
 			mes "[Sailor]";
-			mes "These Porings stole my materials to repair the ship. Can you help me to get them back?";
-			mes "There are plenty of Porings on this island.";
+			mes "These Porings and stupid Lunatics stole my materials to repair the ship. Can you help me to get them back?";
+			mes "There are plenty of this creatures on the island.";
 			next;
 			mes "[Sailor]";
 			mes "I would really appreciate it if you help me.";
