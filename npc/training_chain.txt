@@ -133,6 +133,56 @@ iz_int02,56,32,3	duplicate(Wounded Swordsman#intro_npc02_iz_int)	Wounded Swordsm
 iz_int03,56,32,3	duplicate(Wounded Swordsman#intro_npc02_iz_int)	Wounded Swordsman#intro_npc02_iz_int03	HIDDEN_WARP_NPC
 iz_int04,56,32,3	duplicate(Wounded Swordsman#intro_npc02_iz_int)	Wounded Swordsman#intro_npc02_iz_int04	HIDDEN_WARP_NPC
 
+// - Sailor Migel
+// --------------------------------------------------------------------
+int_land,86,86,5	script	Sailor Migel#intro_npc_sailor	4W_SAILOR,{
+	switch(isbegin_quest(30000)) {
+		case 0:
+			mes "[Sailor Migel]";
+			mes "This damn monsters stole my pocket watch!";
+			mes "While we all were rescuing, the big one called Poring Leader stole my watch!!";
+			mes "Can you help me and kill this bastard and return my pocket watch?";
+			next;
+			if (select("I'm gonna kill Poring Leader", "No way, I have things to do...") == 1) {
+			mes "[Sailor Migel]";
+			mes "Thank you stranger!";
+			mes "Be careful, this one is strong. Maybe you want to find some help.";
+			mes "Try to ask other players to help with that!";
+			setquest 30000;
+			close;
+			} else {
+			close;
+			}
+			break;
+		case 1:
+			if (countitem(7513) > 0) {
+			completequest 30000;
+				delitem 7513,1;
+				getexp 50,50;
+				getitem 569,10;
+				mes "[Sailor Migel]";
+				mes "It's my pocket watch! Thank you, " + strcharinfo(0);
+				mes "Here, take this to compensate your time!";
+				close;
+				break;
+			}
+			mes "[Sailor Migel]";
+			mes "Please, return my watch, I can't live without it!";
+			mes " ";
+			break;
+		case 2:
+			mes "[Sailor Migel]";
+			mes "Thanks for killing this Poring Leader and return my favorite watch!";
+			mes " ";
+			break;
+	}
+
+OnInit:
+	questinfo 30000, QTYPE_QUEST, 2, Job_Novice;
+	end;
+}
+
+
 // - Captain Carocc (Ship)
 // -----------------------------------------------------------------------------
 int_land,78,103,5	script	Captain Carocc#intro_npc03	4_M_REINDEER,{

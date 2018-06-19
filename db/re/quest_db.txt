@@ -3505,9 +3505,12 @@
 19128,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"The Eye of Hellion"
 19129,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"The Eye of Hellion"
 
+// Quest ID,Time Limit,Target1,Val1,Target2,Val2,Target3,Val3,MobID1,NameID1,Rate1,MobID2,NameID2,Rate2,MobID3,NameID3,Rate3,Quest Title
+
 21001,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Escape the Wreck"
 21002,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"The first battle"
-21008,0,0,0,0,0,0,0,2401,6008,10000,1726,1002,4500,0,0,0,"The first battle"
+21008,0,0,0,0,0,0,0,2401,6008,10000,1726,1002,3000,0,0,0,"The first battle"
+30000,0,3401,1,0,0,0,0,3401,7513,10000,0,0,0,0,0,0, "Big thieft"
 
 50000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Pirate Dagger materials"
 50001,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Weather Beaten Old Man"
